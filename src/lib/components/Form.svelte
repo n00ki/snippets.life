@@ -16,12 +16,19 @@
 	}
 </script>
 
-<form>
-	<label for="title">Title</label>
-	<input type="text" name="title" bind:value={title} />
+<form class="flex flex-col">
+	<label for="title" class="p-2">Title</label>
+	<input
+		type="text"
+		name="title"
+		placeholder="optional"
+		bind:value={title}
+		required="false"
+		class="p-2"
+	/>
 
-	<label for="content">Content</label>
-	<input type="text" name="content" bind:value={content} />
+	<label for="content" class="p-2">Content</label>
+	<textarea name="content" rows="10" bind:value={content} class="p-2 resize-none" />
 </form>
 
-<button on:click={handleSubmit}>new snippet</button>
+<button on:click={handleSubmit} class="p-2">new snippet</button>

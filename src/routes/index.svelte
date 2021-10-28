@@ -3,6 +3,8 @@
 	import SnippetsList from '$lib/components/SnippetsList.svelte';
 	import Form from '$lib/components/Form.svelte';
 	import Animate from '$lib/components/Animate.svelte';
+
+	let isFormVisible = false;
 </script>
 
 <Animate type="swing">
@@ -13,9 +15,13 @@
 </Animate>
 
 <a href="/">
-	<h2 class="text-center">submit a snippet</h2>
+	<h2 class="text-center" on:click={() => (isFormVisible = !isFormVisible)}>submit a snippet</h2>
 </a>
 
-<SnippetsList />
+{#if isFormVisible}
+	<section class="max-w-2xl mx-auto my-4">
+		<Form />
+	</section>
+{/if}
 
-<!-- <Form /> -->
+<SnippetsList />

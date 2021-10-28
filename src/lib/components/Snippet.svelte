@@ -11,7 +11,10 @@
 
 <Animate type="fadeIn">
 	<div class="max-w-2xl mx-auto my-4 bg-gray-50 sm:rounded-xl overflow-hidden shadow-lg">
-		<h2 class="p-2">{title}</h2>
+		{#if title}
+			<h2 class="p-2">{title}</h2>
+		{/if}
+
 		<Highlight language={javascript} {code} />
 	</div>
 </Animate>

@@ -10,7 +10,7 @@
 	},
 	"devDependencies": {
 		"@supabase/supabase-js": "^1.25.1",
-		"@sveltejs/adapter-static": "^1.0.0-next.21",
+		"@sveltejs/adapter-node": "^1.0.0-next.55",
 		"@sveltejs/kit": "next",
 		"animate.css": "^4.1.1",
 		"autoprefixer": "^10.3.7",
@@ -27,5 +27,8 @@
 		"svelte-preprocess": "^4.9.8",
 		"tailwindcss": "^2.2.16"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"uninstall": "^0.0.0"
+	}
 }

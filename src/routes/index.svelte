@@ -13,7 +13,8 @@
 </script>
 
 <script>
-	import SubmitSnippet from '$lib/components/SubmitSnippet.svelte';
+	import Snippet from '$lib/components/Snippet.svelte';
+	import Form from '$lib/components/Form.svelte';
 	import Animate from '$lib/components/Animate.svelte';
 
 	export let snippets;
@@ -31,4 +32,6 @@
 	{/if}
 </div>
 
-<SubmitSnippet />
+<Snippet />
+
+<Form />

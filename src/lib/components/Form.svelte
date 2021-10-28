@@ -39,7 +39,7 @@
 	}
 </script>
 
-<a href="/" on:click={() => (isFormVisible = !isFormVisible) && (message = '')}>
+<a href="/" on:click={() => (isFormVisible = true) && (message = '')}>
 	<h2 class="mb-2 text-center">submit a snippet</h2>
 </a>
 

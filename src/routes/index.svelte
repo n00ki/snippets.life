@@ -1,37 +1,21 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const res = await fetch('/api/snippets');
-		const data = await res.json();
-
-		return {
-			props: {
-				snippets: data.data,
-				error: data.error
-			}
-		};
-	}
-</script>
-
 <script>
 	import Snippet from '$lib/components/Snippet.svelte';
+	import SnippetsList from '$lib/components/SnippetsList.svelte';
 	import Form from '$lib/components/Form.svelte';
 	import Animate from '$lib/components/Animate.svelte';
-
-	export let snippets;
-	export let error;
 </script>
 
-<div>
-	{#if error}
-		{error.message}
-	{:else}
-		{#each snippets as snippet}
-			{snippet.title}
-			{snippet.content}
-		{/each}
-	{/if}
-</div>
+<Animate type="swing">
+	<section class="my-8 text-center bg-yellow-50">
+		<h1 class="mb-2 text-3xl sm:text-4xl font-semibold">snippets.life</h1>
+		<h1 class="text-xl font-medium">Life, Coded</h1>
+	</section>
+</Animate>
 
-<Snippet />
+<a href="/">
+	<h2 class="text-center">submit a snippet</h2>
+</a>
 
-<Form />
+<SnippetsList />
+
+<!-- <Form /> -->

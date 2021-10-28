@@ -3,7 +3,11 @@ const config = {
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				scp: ['Source Code Pro', 'serif']
+			}
+		}
 	},
 
 	plugins: []

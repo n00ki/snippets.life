@@ -14,6 +14,7 @@
 </script>
 
 <script>
+	import Snippet from '$lib/components/Snippet.svelte';
 	export let snippet;
 	export let error;
 </script>
@@ -21,5 +22,5 @@
 {#if error}
 	{error.message}
 {:else}
-	{snippet.title}
+	<Snippet title={snippet.title} code={snippet.content} />
 {/if}

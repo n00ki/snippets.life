@@ -1,5 +1,8 @@
 <script>
+	// Animations
 	import 'animate.css';
+
+	// Props
 	export let type;
 </script>
 

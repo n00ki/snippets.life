@@ -14,7 +14,10 @@
 </script>
 
 <script>
+	// Components
 	import Snippet from '$lib/components/Snippet.svelte';
+
+	// Props
 	export let snippet;
 	export let error;
 </script>

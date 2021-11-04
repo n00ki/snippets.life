@@ -1,10 +1,13 @@
 <script>
+	// Components
 	import { Highlight } from 'svelte-highlight';
+	import Animate from '$lib/components/Animate.svelte';
+
+	// Styles
 	import javascript from 'svelte-highlight/src/languages/javascript';
 	import 'svelte-highlight/src/styles/night-owl.css';
 
-	import Animate from '$lib/components/Animate.svelte';
-
+	// Props
 	export let title = '';
 	export let code = '';
 </script>

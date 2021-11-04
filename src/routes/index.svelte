@@ -1,4 +1,5 @@
 <script>
+	// Components
 	import Snippet from '$lib/components/Snippet.svelte';
 	import SnippetsList from '$lib/components/SnippetsList.svelte';
 	import Form from '$lib/components/Form.svelte';

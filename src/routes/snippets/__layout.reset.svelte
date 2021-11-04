@@ -1,5 +1,8 @@
 <script>
+	// Components
 	import SEO from '$lib/components/SEO.svelte';
+
+	// Styles
 	import '../../styles.css';
 </script>
 

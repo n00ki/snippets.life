@@ -1,4 +1,5 @@
 <script>
+	// Components
 	import Snippet from '$lib/components/Snippet.svelte';
 
 	async function getData() {

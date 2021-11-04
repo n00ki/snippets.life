@@ -2,7 +2,7 @@ import { db } from '$lib/db.js';
 
 // GET /snippets
 export async function get() {
-	let { data, error } = await db.from('snippets').select('*');
+	let { data, error } = await db.from('snippets').select('*').eq('approved', true);
 
 	return {
 		body: {

@@ -1,4 +1,10 @@
 <script>
+	// Analytics
+	import mixpanel from 'mixpanel-browser';
+
+	mixpanel.init('8a280e5568c1c17b8cb9749e4bd05ff5');
+	mixpanel.track('Homepage Visit');
+
 	// Components
 	import Snippet from '$lib/components/Snippet.svelte';
 	import SnippetsList from '$lib/components/SnippetsList.svelte';

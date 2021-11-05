@@ -29,6 +29,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"uninstall": "^0.0.0"
+		"mixpanel-browser": "^2.41.0"
 	}
 }

@@ -76,7 +76,7 @@
 			name="title"
 			bind:value={title}
 			placeholder="optional"
-			class="p-2 mx-2 rounded-md sm:mx-0"
+			class="p-2 mx-2 rounded-md sm:mx-0 text-gray-800"
 		/>
 
 		<label for="content" class="p-2">Content</label>
@@ -84,7 +84,7 @@
 			name="content"
 			rows="10"
 			bind:value={content}
-			class="p-2 mx-2 rounded-md resize-none sm:mx-0"
+			class="p-2 mx-2 rounded-md resize-none sm:mx-0 text-gray-800"
 		/>
 	</form>
 

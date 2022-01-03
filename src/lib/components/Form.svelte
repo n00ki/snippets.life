@@ -1,4 +1,9 @@
 <script>
+	// Styles
+	import { Highlight } from 'svelte-highlight';
+	import javascript from 'svelte-highlight/src/languages/javascript';
+	import 'svelte-highlight/src/styles/night-owl.css';
+
 	let title = '';
 	let content = '';
 	let message = '';
@@ -80,6 +85,7 @@
 		/>
 
 		<label for="content" class="p-2">Content</label>
+
 		<textarea
 			name="content"
 			rows="10"
@@ -87,6 +93,12 @@
 			class="p-2 mx-2 rounded-md resize-none sm:mx-0 text-gray-800"
 		/>
 	</form>
+
+	{#if content.length > 0}
+		<div class="my-1 rounded-lg overflow-hidden">
+			<Highlight language={javascript} code={content} />
+		</div>
+	{/if}
 
 	<button on:click|preventDefault={handleSubmit} class="p-2 w-full mx-auto font-medium"
 		>Submit</button

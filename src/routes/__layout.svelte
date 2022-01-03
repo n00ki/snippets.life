@@ -13,7 +13,6 @@
 <SEO />
 
 <main class="container mx-auto sm:h-screen font-scp font-medium text-gray-800 dark:text-gray-100">
-	<div class="h-2/5" />
 	<ThemeSwitcher />
 	<slot />
 </main>

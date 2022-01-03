@@ -12,7 +12,6 @@
 		"@supabase/supabase-js": "^1.25.1",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
-		"animate.css": "^4.1.1",
 		"autoprefixer": "^10.3.7",
 		"cssnano": "^5.0.8",
 		"eslint": "^7.32.0",

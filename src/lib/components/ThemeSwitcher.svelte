@@ -1,6 +1,5 @@
 <script>
 	import { browser } from '$app/env';
-	import { fade } from 'svelte/transition';
 
 	// Stores
 	import { preferredTheme } from '$lib/stores';
@@ -35,7 +34,7 @@
 </svelte:head>
 
 <div
-	class="flex justify-center pt-4 sm:pt-0 text-gray-800 transition duration-500 ease-in-out {showThemeSwitcher
+	class="flex justify-center mt-6 text-gray-800 transition duration-100 ease-in-out {showThemeSwitcher
 		? 'opacity-100'
 		: 'opacity-0'}"
 >
